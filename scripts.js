@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const paginaActual = window.location.pathname.split("/").pop();
 
     if (!nombre && paginaActual !== "index.html") {
-        window.location.href = "login.html";
+        window.location.href = "index.html";  // 🔹 corregido
         return;
     }
 
@@ -48,6 +48,4 @@ document.addEventListener("DOMContentLoaded", () => {
         const welcome = document.getElementById("welcomeMessage");
         if (welcome) welcome.textContent = `Bienvenido, ${nombre}`;
     }
-
-
 });
