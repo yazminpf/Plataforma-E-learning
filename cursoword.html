@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aprende Word desde cero</title>
+        <link rel="stylesheet" href="cursos.css">
+    </head>
+
+    <body>
+
+        <!-- Barra superior -->
+        <div class="top-bar">
+            <div class="dropdown">
+                <button class="dropbtn" id="welcomeMessage">Bienvenido</button>
+                <div class="dropdown-content">
+                    <a href="usuario.html">Mi perfil</a>
+                    <a href="cursos.html">Mis cursos</a>
+                    <a href="#">Configuración</a>
+                    <a href="#" onclick="logout()">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contenido del curso -->
+        <section class="course-detail">
+            
+            <div class="course-video">
+                <iframe 
+                    width="100%" 
+                    height="400" 
+                    src="https://www.youtube.com/embed/OOdNmBWQsb0" 
+                    title="Video del curso" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="course-description">
+                <h2>Descripción del curso</h2>
+                <p>
+                    Para quienes quieren aprender a crear documentos desde cero con Microsoft Word 2024, 
+                    en este curso aprenderás las bases para desarrollar tus habilidades en este tema. 
+                    EN ESTE VIDEO VAS A APRENDER TODO LO QUE NECESITAS PARA CREAR DOCUMENTOS 
+                    CON TODOS LOS FORMATOS Y CON TODAS LAS INSERCIONES QUE NECESITES. 
+                    Incluye lecciones teóricas, ejercicios prácticos y material de apoyo.
+                </p>
+            </div>
+
+            <div class="course-modules">
+                <h2>Lecciones</h2>
+                <ul>
+                    <li>Lección 1 - Introducción</li>
+                    <li>Lección 2 - Conceptos básicos</li>
+                    <li>Lección 3 - Ejercicios prácticos</li>
+                    <li>Lección 4 - Proyecto final</li>
+                </ul>
+            </div>
+
+            <div class="course-resources">
+                <h2>Recursos</h2>
+                <ul>
+                    <li><a href="#">Descargar PDF del curso</a></li>
+                    <li><a href="#">Ejercicios extra</a></li>
+                    <li><a href="#">Foro de discusión</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <script src="scripts.js"></script>
+    </body>
+</html>
