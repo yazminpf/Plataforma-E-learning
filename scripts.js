@@ -15,14 +15,14 @@ function login() {
 function logout() {
     localStorage.removeItem('nombreUsuario');
     localStorage.removeItem('correoUsuario');
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     const nombre = localStorage.getItem('nombreUsuario');
     const paginaActual = window.location.pathname.split("/").pop();
 
-    if (!nombre && paginaActual !== "login.html") {
+    if (!nombre && paginaActual !== "index.html") {
         window.location.href = "login.html";
         return;
     }
