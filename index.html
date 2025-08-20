@@ -25,18 +25,21 @@
         </div>
     </div>
 
-    <!-- Aquí aparecerá el formulario de HubSpot -->
-    <div id="hubspot-form"></div>
+    <!-- 🔹 Aquí se mostrará el formulario de HubSpot -->
+    <div id="hubspot-form" style="margin: 50px auto; width: 80%; max-width: 600px;"></div>
 
-    <!-- Script de HubSpot -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/50395961.js"></script>
+    <!-- Scripts de HubSpot -->
+    <script src="https://js.hsforms.net/forms/embed/v2.js"></script>
     <script>
-        hbspt.forms.create({
-            region: "na1",
-            portalId: "50395961",
-            formId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", // 👈 pega aquí tu formId real
-            target: "#hubspot-form" // 👈 ahora sabe dónde insertarse
-        });
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "50395961",
+        formId: "f59762d4-9439-4e30-8902-2fc78b0d28ec",
+        target: "#hubspot-form"  // 👈 Esto asegura que aparezca en el div
+      });
     </script>
+
 </body>
 </html>
+
+
