@@ -1,31 +1,42 @@
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Iniciar Sesión</title>
-        <link rel="stylesheet" href="estilos.css">
-        <script src="scripts.js" defer></script>
-        <!-- ingreso ruta HubSpot -->
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/50395961.js"></script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
 
-        <!-- Logotipo -->
-        <div class="corner-logo">
-            <img src="imagenes/logo.proyecto.jpg" alt="Logotipo Plataforma E-learning">
+    <!-- Logotipo -->
+    <div class="corner-logo">
+        <img src="imagenes/logo.proyecto.jpg" alt="Logotipo Plataforma E-learning">
+    </div>
+
+    <!-- Contenedor de login -->
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="userName" placeholder="Nombre de usuario" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button onclick="login()">Entrar</button>
         </div>
+    </div>
 
-        <!-- Contenedor de login -->
-        <div class="login-container">
-            <div class="login-box">
-                <h2>Iniciar Sesión</h2>
-                <input type="text" id="userName" placeholder="Nombre de usuario" required>
-                <input type="email" id="email" placeholder="Correo electrónico" required>
-                <input type="password" id="password" placeholder="Contraseña" required>
-                <button onclick="login()">Entrar</button>
-            </div>
-        </div>
+    <!-- Aquí aparecerá el formulario de HubSpot -->
+    <div id="hubspot-form"></div>
 
-    </body>
+    <!-- Script de HubSpot -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/50395961.js"></script>
+    <script>
+        hbspt.forms.create({
+            region: "na1",
+            portalId: "50395961",
+            formId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", // 👈 pega aquí tu formId real
+            target: "#hubspot-form" // 👈 ahora sabe dónde insertarse
+        });
+    </script>
+</body>
 </html>
