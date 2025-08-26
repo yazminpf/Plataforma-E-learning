@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: white;
+    background-image: url("imagenes/fondo-pagina.png");
+    background-size: cover;        /* Ajusta la imagen a la pantalla */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* No se repite */
+    background-attachment: fixed;
 }
 
 /* ==== Barra superior ==== */
