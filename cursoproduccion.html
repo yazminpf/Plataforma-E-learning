@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edición y Producción</title>
+        <link rel="stylesheet" href="cursos.css">
+    </head>
+
+    <body>
+
+        <!-- Barra superior -->
+        <div class="top-bar">
+            <div class="dropdown">
+                <button class="dropbtn" id="welcomeMessage">Bienvenido</button>
+                <div class="dropdown-content">
+                    <a href="usuario.html">Mi perfil</a>
+                    <a href="cursos.html">Mis cursos</a>
+                    <a href="#">Configuración</a>
+                    <a href="#" onclick="logout()">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contenido del curso -->
+        <section class="course-detail">
+            <div class="course-video">
+                <video width="100%" height="400" controls>
+                    <source src="videos/cursoproduccion.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+
+            <div class="course-description">
+                <h2>Descripción del curso</h2>
+                <p>Curso para convertir la camara de tu celular en escenas de Cine completamente gratis y facil de usar.</p>
+                <p>https://youtu.be/71UlVGGlNUk?si=nw0Usao_QNnEXNEq</p>
+            </div>
+
+            <div class="course-modules">
+                <h2>Lecciones</h2>
+                <ul>
+                    <li>Lección 1 - Introducción</li>
+                    <li>Lección 2 - Conceptos básicos</li>
+                    <li>Lección 3 - Ejercicios prácticos</li>
+                    <li>Lección 4 - Proyecto final</li>
+                </ul>
+            </div>
+
+            <div class="course-resources">
+                <h2>Recursos</h2>
+                <ul>
+                    <li><a href="#">Descargar PDF del curso</a></li>
+                    <li><a href="#">Ejercicios extra</a></li>
+                    <li><a href="#">Foro de discusión</a></li>
+                </ul>
+            </div>
+        </section>
+        <script src="scripts.js"></script>
+    </body>
+</html>
